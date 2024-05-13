@@ -1,0 +1,79 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Langages</h2>
+		<p>Je travaille avec les langages courants tels que JavaScript, Java, PHP</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="list" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Framework / Library</h2>
+		<p>Connaissance des frameworks tels que React, Angular, Vue.js (pour le développement web) ou Flask, Django (pour le développement backend).</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="paper-plane-tilt" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Data Base</h2>
+		<p>Expérience dans la conception et la gestion de bases de données SQL (MySQL, PostgreSQL) et NoSQL (MongoDB, Firebase).</p>
+		<p>Utilisation d'ORM (Object-Relational Mapping) comme Sequelize, Hibernate, ou Entity Framework.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="rocket-launch" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>API et Services Web</h2>
+		<p>Conception et utilisation d'API RESTful.</p>
+		<p>Intégration de services tiers tels que Google Maps, Stripe, ou Firebase.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Méthodes Agiles</h2>
+		<p>Connaissance des méthodologies agiles (Scrum, Kanban) et des cycles de développement logiciel.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="moon-stars" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Sécurité</h2>
+		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
