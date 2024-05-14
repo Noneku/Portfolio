@@ -3,9 +3,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
+import Pill from '../components/Pill.astro';
 ---
 
-<BaseLayout title="About | Jeanine White" description="About Jeanine White Lorem Ipsum">
+<BaseLayout title="About | Nassim Gacem" description="About Nassim Gacem Lorem Ipsum">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
@@ -15,8 +16,8 @@ import Hero from '../components/Hero.astro';
 				<img
 					width="1553"
 					height="873"
-					src="/assets/at-work.jpg"
-					alt="Jeanine White at work with a colleague"
+					src="/assets/qui-suis-je.jpeg"
+					alt="Nassim	Gacem at work with a colleague"
 				/>
 			</Hero>
 
@@ -46,13 +47,20 @@ import Hero from '../components/Hero.astro';
 			<section>
 				<h2 class="section-title">Diplômes</h2>
 				<div class="content">
-					<p>Corporis voluptates tenetur laudantium.</p>
+					<p>BAC + 2 - Développeur Web - Web Mobile</p>
 				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Compétences</h2>
-				<div class="content">
-					<p>officia unde omnis</p>
+				<div class="skills">
+					<Pill>Spring Boot</Pill>
+					<Pill>Node.js</Pill>
+					<Pill>React</Pill>
+					<Pill>Angular</Pill>
+					<Pill>Symfony</Pill>
+					<Pill>API RESTful</Pill>
+					<Pill>Docker</Pill>
+					<Pill>Git</Pill>
 				</div>
 			</section>
 		</main>

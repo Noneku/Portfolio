@@ -202,6 +202,13 @@ h5 {
 	flex-direction: column;
 }
 
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
 .gap-2 {
 	gap: 0.5rem;
 }
