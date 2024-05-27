@@ -177,7 +177,12 @@ h5 {
 }
 
 /* Utilities */
-
+.bg-red {
+	background-color: red;
+}
+.bg-yellow {
+	background-color: yellow;
+}
 .sr-only {
 	position: absolute;
 	width: 1px;
