@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 Portfolio — Nassim
 
-## Getting Started
+Bienvenue dans le dépôt officiel de mon portfolio personnel, développé pour présenter mes compétences, mes projets et mon parcours professionnel.
+Ce site a été conçu avec Next.js, React, et une interface moderne inspirée d’un template professionnel.
 
-First, run the development server:
+🚀 Technologies utilisées
 
-```bash
+Voici la stack principale utilisée pour construire ce portfolio :
+
+Next.js 16 – Framework React pour une application performante et optimisée
+
+React 19 – Dernière version de React
+
+Tailwind CSS – Pour un design moderne, responsive et efficace
+
+TypeScript – Typage pour une meilleure maintenabilité du code
+
+Radix UI – Composants accessibles et stylés
+
+Lucide React – Icônes légères et modernes
+
+🎨 Fonctionnalités
+
+🎯 Section Hero moderne et animée
+
+📄 Présentation personnelle structurée et professionnelle
+
+💼 Listing de projets avec aperçu visuel et lien GitHub/démo
+
+🧩 Design responsive 100% mobile-friendly
+
+🌓 Mode clair / sombre
+
+⚡ Performance optimisée grâce à Next.js
+
+📁 Structure du projet
+/app
+├─ layout.tsx → Layout global
+├─ page.tsx → Page principale
+├─ styles/ → Styles globaux / animations
+/components
+├─ ui/ → Composants réutilisables
+├─ sections/ → Sections du portfolio
+/lib
+├─ utils.ts → Fonctions utilitaires
+public/
+├─ images/ → Images du portfolio
+
+🛠️ Installation et lancement
+
+Clone le projet :
+
+git clone https://github.com/Noneku/Portfolio.git
+cd Portfolio
+
+Installe les dépendances :
+
+npm install
+
+Lance le serveur local :
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Le site sera accessible sur :
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Build en production
+npm run build
+npm start
 
-## Learn More
+🎯 Objectif du projet
 
-To learn more about Next.js, take a look at the following resources:
+L’objectif de ce portfolio est de :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Présenter mes compétences techniques
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Mettre en avant mes projets
 
-## Deploy on Vercel
+Permettre aux recruteurs et entreprises de mieux me connaître
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Servir de vitrine professionnelle en ligne
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📧 Contact
+
+Tu peux me contacter pour toute opportunité, question ou collaboration :
+
+Email : dev.nassim.pro@gmail.com
+LinkedIn : https://www.linkedin.com/in/nassim-gacem-3b269423a/
+
+⭐ N'hésite pas à laisser une étoile sur le repo !
+
+Si tu trouves ce portfolio inspirant, une étoile ⭐ sur GitHub fait toujours plaisir 😊.
