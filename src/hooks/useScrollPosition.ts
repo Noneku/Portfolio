@@ -6,7 +6,6 @@ import { useEffect, useState } from 'react'
  */
 export const useScrollPosition = (): boolean => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,8 +17,6 @@ export const useScrollPosition = (): boolean => {
       } else {
         setIsScrolled(false)
       }
-
-      setLastScrollY(currentScrollY)
     }
 
     // Use passive listener for better performance

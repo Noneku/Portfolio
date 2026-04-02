@@ -45,6 +45,22 @@ export interface SocialLink {
 }
 
 /**
+ * Soft skill
+ */
+export interface SoftSkill {
+  name: string
+  emoji: string
+}
+
+/**
+ * Language
+ */
+export interface Language {
+  name: string
+  level: string
+}
+
+/**
  * Component props type for sections
  */
 export interface SectionProps {

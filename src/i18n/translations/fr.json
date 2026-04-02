@@ -8,10 +8,10 @@
   },
   "hero": {
     "title": "Salut, je suis",
-    "name": "Gacem Nassim",
-    "subtitle": "Développeur Frontend",
-    "description": "Créer des applications web rapides, modernes et belles",
-    "technologies": "React / TypeScript / Vite",
+    "name": "Nassim Gacem",
+    "subtitle": "Développeur Full-Stack",
+    "description": "Créer des applications web et mobiles innovantes avec les technologies modernes",
+    "technologies": "React / TypeScript / NestJS / Docker",
     "cta": "Voir mes projets"
   },
   "projects": {
@@ -23,7 +23,7 @@
   },
   "about": {
     "title": "À Propos",
-    "description": "Je suis un développeur frontend passionné axé sur la création d'expériences utilisateur exceptionnelles. Avec une expertise dans les technologies web modernes, je crée des applications évolutives et maintenables.",
+    "description": "Je suis un développeur full-stack curieux et rigoureux passionné par le web et les technologies innovantes. Actuellement en Master Ingénierie Avancée du Logiciel à l'ISCOD, je cherche une alternance de 2 ans pour mettre en pratique mes compétences et contribuer à des projets innovants. Avec une expérience en développement frontend et backend, je crée des applications évolutives et maintenables.",
     "highlights": "Ce que j'apporte"
   },
   "skills": {
@@ -36,7 +36,9 @@
   "contact": {
     "title": "Restons en Contact",
     "subtitle": "Travaillons ensemble",
-    "email": "Email",
+    "email": "dev.nassim.pro@gmail.com",
+    "phone": "06 22 75 28 18",
+    "location": "Roubaix, France",
     "github": "GitHub",
     "linkedin": "LinkedIn"
   },

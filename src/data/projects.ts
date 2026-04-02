@@ -1,4 +1,4 @@
-import { Project } from '../types'
+import { Project } from '../types';
 
 /**
  * Project portfolio data
@@ -6,59 +6,82 @@ import { Project } from '../types'
  */
 export const projects: Project[] = [
   {
-    id: 'project-1',
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce platform built with React and TypeScript',
+    id: 'hdm-network',
+    title: 'HDM Network - Web & Mobile Platform',
+    description:
+      'Full-stack web development internship - Database creation, APIs, and web applications',
     longDescription:
-      'Full-stack e-commerce solution with product catalog, shopping cart, and payment integration. Features include user authentication, product filtering, and order management.',
-    technologies: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'Stripe'],
-    github: 'https://github.com/Noneku/ecommerce-platform',
-    demo: 'https://ecommerce-demo.example.com',
+      'Completed a 3-month internship at HDM Network ASBL working on real-world projects including database design, RESTful API development, data scraping, and building responsive web and mobile applications. Demonstrated proficiency with modern full-stack technologies and agile methodologies.',
+    technologies: [
+      'React',
+      'React Native',
+      'NestJS',
+      'GraphQL',
+      'Prisma',
+      'Docker',
+      'TypeScript',
+    ],
+    github: 'https://github.com/Noneku',
     featured: true,
   },
   {
-    id: 'project-2',
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates',
+    id: 'roubaix-municipality',
+    title: 'Activity Report Management System',
+    description:
+      'Municipal application for activity report registration and administration',
     longDescription:
-      'Team collaboration tool with task creation, assignment, and progress tracking. Features WebSocket integration for real-time updates and team collaboration.',
-    technologies: ['React', 'Firebase', 'TailwindCSS', 'Framer Motion'],
-    github: 'https://github.com/Noneku/task-manager',
-    demo: 'https://task-manager-demo.example.com',
+      'Developed a web application for Roubaix city municipality enabling municipal agents to register and manage activity reports via a user-friendly form interface. Implemented using Symfony framework with Bootstrap UI.',
+    technologies: ['Symfony', 'Twig', 'PHP', 'Bootstrap', 'Doctrine', 'MySQL'],
+    github: 'https://github.com/Noneku',
     featured: true,
   },
   {
-    id: 'project-3',
-    title: 'Weather Dashboard',
-    description: 'Real-time weather application with location-based forecasts',
+    id: 'portfolio-app',
+    title: 'Modern Developer Portfolio',
+    description:
+      'Professional portfolio website showcasing skills and projects',
     longDescription:
-      'Weather application with real-time data, 5-day forecasts, and multiple location support. Beautiful UI with animated weather visualizations.',
-    technologies: ['React', 'OpenWeatherMap API', 'TailwindCSS', 'Vite'],
-    github: 'https://github.com/Noneku/weather-dashboard',
-    demo: 'https://weather-dashboard-demo.example.com',
+      'Built this responsive, modern portfolio using the latest web technologies. Features multi-language support (EN/FR), dark theme with smooth animations, and clean architecture following SOLID principles.',
+    technologies: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'TailwindCSS',
+      'Framer Motion',
+      'i18next',
+    ],
+    github: 'https://github.com/Noneku/Portfolio-Nassim',
+    featured: true,
   },
   {
-    id: 'project-4',
-    title: 'Personal Blog',
-    description: 'A performant blog platform with markdown support',
+    id: 'learning-projects',
+    title: 'Learning & Practice Projects',
+    description:
+      'Various educational projects built during training and self-learning',
     longDescription:
-      'Static site generator with markdown support for blog posts. Features include categories, tags, search functionality, and dark mode support.',
-    technologies: ['React', 'Markdown', 'Vite', 'TailwindCSS'],
-    github: 'https://github.com/Noneku/personal-blog',
-    demo: 'https://blog-demo.example.com',
+      'Multiple projects developed during formation at ISCOD and personal learning journey. Includes exercises with Angular, Spring, various frontend and backend technologies. All projects follow best practices and design patterns.',
+    technologies: [
+      'Angular',
+      'Spring',
+      'React',
+      'Node.js',
+      'JavaScript',
+      'Design Patterns',
+    ],
+    github: 'https://github.com/Noneku',
   },
-]
+];
 
 /**
  * Get a project by its ID
  */
 export const getProjectById = (id: string): Project | undefined => {
-  return projects.find((project) => project.id === id)
-}
+  return projects.find((project) => project.id === id);
+};
 
 /**
  * Get featured projects only
  */
 export const getFeaturedProjects = (): Project[] => {
-  return projects.filter((project) => project.featured)
-}
+  return projects.filter((project) => project.featured);
+};

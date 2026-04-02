@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useScrollPosition } from '../../hooks'
 import { changeLanguage } from '../../i18n/config'
 import { navLinks } from '../../data/constants'
-import { Container, Button } from '../ui'
+import { Container } from '../ui'
 
 /**
  * Navbar component

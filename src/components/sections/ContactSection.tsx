@@ -1,14 +1,14 @@
-import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
-import { Container, Section, Button } from '../ui'
-import { socialLinks } from '../../data/constants'
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { Container, Section, Button } from '../ui';
+import { socialLinks } from '../../data/constants';
 
 /**
  * Contact section
  * Call-to-action section with social links and contact information
  */
 export const ContactSection = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -19,12 +19,12 @@ export const ContactSection = () => {
         delayChildren: 0.2,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  }
+  };
 
   return (
     <Section
@@ -59,28 +59,24 @@ export const ContactSection = () => {
                   {link.icon === 'mail' && '📧'}
                 </div>
                 <h3 className="font-bold text-white">{link.name}</h3>
-                <p className="mt-2 text-sm text-gray-400 break-all">{link.url}</p>
+                <p className="mt-2 text-sm text-gray-400 break-all">
+                  {link.url}
+                </p>
               </motion.a>
             ))}
           </div>
 
           {/* CTA Button */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-12 text-center"
-          >
+          <motion.div variants={itemVariants} className="mt-12 text-center">
             <p className="mb-6 text-lg text-gray-300">
               Let's build something amazing together
             </p>
-            <a
-              href="mailto:nassim@example.com"
-              className="inline-block"
-            >
+            <a href="mailto:dev.nassim.pro@gmail.com" className="inline-block">
               <Button size="lg">Get In Touch</Button>
             </a>
           </motion.div>
         </motion.div>
       </Container>
     </Section>
-  )
-}
+  );
+};
