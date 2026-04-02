@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Hi, I'm",
+    "name": "Gacem Nassim",
+    "subtitle": "Frontend Developer",
+    "description": "Building fast, modern, and beautiful web applications",
+    "technologies": "React / TypeScript / Vite",
+    "cta": "View My Projects"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my recent work",
+    "github": "View on GitHub",
+    "demo": "Live Demo",
+    "technologies": "Technologies"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a passionate frontend developer with a focus on creating exceptional user experiences. With expertise in modern web technologies, I build scalable and maintainable applications.",
+    "highlights": "What I bring to the table"
+  },
+  "skills": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies I work with",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "credits": "Built with React, TypeScript, and TailwindCSS"
+  }
+}

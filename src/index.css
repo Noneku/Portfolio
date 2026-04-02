@@ -1,0 +1,71 @@
+/**
+ * Global styles for the portfolio application
+ * Imports Tailwind CSS and defines custom styles
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(26, 26, 26);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(16, 185, 129);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(5, 150, 105);
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid rgb(16, 185, 129);
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline on buttons and links */
+button:focus,
+a:focus {
+  outline: none;
+}
+
+/* Ensure text selection color matches theme */
+::selection {
+  background-color: rgb(16, 185, 129);
+  color: rgb(10, 10, 10);
+}
