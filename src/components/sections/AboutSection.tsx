@@ -56,9 +56,9 @@ export const AboutSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
                   transition={{ delay: index * 0.1, duration: 0.6 }}
-                  className="rounded-lg border border-neon-green border-opacity-30 bg-dark-900 px-6 py-4 text-center"
+                  className="rounded-xl border border-neon-green border-opacity-30 bg-dark-900 px-6 py-4 text-center hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20 transition-all"
                 >
-                  <p className="text-gray-200">{highlight}</p>
+                  <p className="text-gray-200 font-medium">{highlight}</p>
                 </motion.div>
               ))}
             </div>
@@ -67,7 +67,7 @@ export const AboutSection = () => {
           {/* Soft Skills Section */}
           <div className="mt-16">
             <h3 className="mb-8 text-center text-2xl font-bold text-white">
-              💡 Soft Skills
+              Soft Skills
             </h3>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
               {softSkills.map((skill, index) => (
@@ -76,9 +76,9 @@ export const AboutSection = () => {
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : 'hidden'}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="rounded-lg border border-neon-green border-opacity-30 bg-dark-900 px-4 py-3 text-center"
+                  className="rounded-xl border border-neon-green border-opacity-30 bg-dark-900 px-4 py-3 text-center hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20 transition-all"
                 >
-                  <p className="text-gray-200">{skill.name}</p>
+                  <p className="text-gray-200 font-medium">{skill.emoji} {skill.name}</p>
                 </motion.div>
               ))}
             </div>
@@ -87,7 +87,7 @@ export const AboutSection = () => {
           {/* Languages Section */}
           <div className="mt-16">
             <h3 className="mb-8 text-center text-2xl font-bold text-white">
-              🌐 Languages
+              Languages
             </h3>
             <div className="flex justify-center gap-6">
               {languages.map((lang, index) => (
@@ -96,7 +96,7 @@ export const AboutSection = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
                   transition={{ delay: index * 0.2, duration: 0.6 }}
-                  className="rounded-lg border border-neon-green border-opacity-30 bg-dark-900 px-6 py-4 text-center"
+                  className="rounded-xl border border-neon-green border-opacity-30 bg-dark-900 px-6 py-4 text-center hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20 transition-all"
                 >
                   <p className="text-lg font-semibold text-white">{lang.name}</p>
                   <p className="mt-1 text-sm text-neon-green">{lang.level}</p>

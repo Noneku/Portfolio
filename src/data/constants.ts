@@ -38,63 +38,63 @@ export const socialLinks: SocialLink[] = [
  */
 export const skills: Skill[] = [
   // Frontend Frameworks
-  { name: '⚛️ React', category: 'frontend' },
-  { name: '🅰️ Angular', category: 'frontend' },
-  { name: '📱 React Native', category: 'frontend' },
-  { name: '💙 TypeScript', category: 'frontend' },
-  { name: '🟨 JavaScript', category: 'frontend' },
-  { name: '🎨 TailwindCSS', category: 'frontend' },
-  { name: '🏗️ HTML5', category: 'frontend' },
-  { name: '🎨 CSS3/SASS/LESS', category: 'frontend' },
+  { name: 'React', category: 'frontend' },
+  { name: 'Angular', category: 'frontend' },
+  { name: 'React Native', category: 'frontend' },
+  { name: 'TypeScript', category: 'frontend' },
+  { name: 'JavaScript', category: 'frontend' },
+  { name: 'TailwindCSS', category: 'frontend' },
+  { name: 'HTML5', category: 'frontend' },
+  { name: 'CSS3 / SASS / LESS', category: 'frontend' },
 
   // Backend Frameworks
-  { name: '🟢 Node.js', category: 'backend' },
-  { name: '🏗️ NestJS', category: 'backend' },
-  { name: '🐘 Symfony', category: 'backend' },
-  { name: '🌿 Spring', category: 'backend' },
-  { name: '🔗 GraphQL', category: 'backend' },
-  { name: '💾 Prisma ORM', category: 'backend' },
-  { name: '🗄️ MongoDB', category: 'backend' },
-  { name: '🐘 PostgreSQL', category: 'backend' },
-  { name: '🐝 Doctrine', category: 'backend' },
+  { name: 'Node.js', category: 'backend' },
+  { name: 'NestJS', category: 'backend' },
+  { name: 'Symfony', category: 'backend' },
+  { name: 'Spring', category: 'backend' },
+  { name: 'GraphQL', category: 'backend' },
+  { name: 'Prisma ORM', category: 'backend' },
+  { name: 'MongoDB', category: 'backend' },
+  { name: 'PostgreSQL', category: 'backend' },
+  { name: 'Doctrine', category: 'backend' },
 
   // Tools & DevOps
-  { name: '🐳 Docker', category: 'tools' },
-  { name: '🌳 Git/GitHub', category: 'tools' },
-  { name: '⚡ Vite', category: 'tools' },
-  { name: '📦 Webpack', category: 'tools' },
-  { name: '💻 VS Code', category: 'tools' },
-  { name: '🔄 Jira', category: 'tools' },
-  { name: '📋 Scrum/Kanban', category: 'tools' },
-  { name: '🔨 Jmerise (MCD/MLD)', category: 'tools' },
+  { name: 'Docker', category: 'tools' },
+  { name: 'Git / GitHub', category: 'tools' },
+  { name: 'Vite', category: 'tools' },
+  { name: 'Webpack', category: 'tools' },
+  { name: 'VS Code', category: 'tools' },
+  { name: 'Jira', category: 'tools' },
+  { name: 'Scrum / Kanban', category: 'tools' },
+  { name: 'Jmerise (MCD / MLD)', category: 'tools' },
 
   // Competences Specific
-  { name: '🔌 REST API', category: 'other' },
-  { name: '🏗️ API GraphQL', category: 'other' },
-  { name: '📱 Responsive Design', category: 'other' },
-  { name: '🔐 Web Security', category: 'other' },
-  { name: '🧪 Unit Testing', category: 'other' },
-  { name: '🎯 Design Patterns', category: 'other' },
-  { name: '📐 MVC/POO', category: 'other' },
-  { name: '🌐 Agile Method', category: 'other' },
+  { name: 'REST API', category: 'other' },
+  { name: 'GraphQL API', category: 'other' },
+  { name: 'Responsive Design', category: 'other' },
+  { name: 'Web Security', category: 'other' },
+  { name: 'Unit Testing', category: 'other' },
+  { name: 'Design Patterns', category: 'other' },
+  { name: 'MVC / POO', category: 'other' },
+  { name: 'Agile Methodology', category: 'other' },
 ];
 
 /**
  * Soft skills and professional qualities
  */
 export const softSkills: SoftSkill[] = [
-  { name: '👥 Team Spirit', emoji: '👥' },
-  { name: '🔄 Adaptability', emoji: '🔄' },
-  { name: '🧩 Problem Solving', emoji: '🧩' },
-  { name: '⚡ Autonomy', emoji: '⚡' },
-  { name: '💬 Communication', emoji: '💬' },
-  { name: '🎯 Attention to Detail', emoji: '🎯' },
+  { name: 'Team Spirit', emoji: '👥' },
+  { name: 'Adaptability', emoji: '🔄' },
+  { name: 'Problem Solving', emoji: '🧩' },
+  { name: 'Autonomy', emoji: '⚡' },
+  { name: 'Communication', emoji: '💬' },
+  { name: 'Attention to Detail', emoji: '🎯' },
 ];
 
 /**
  * Languages spoken
  */
 export const languages: Language[] = [
-  { name: '🇫🇷 French', level: 'Native' },
-  { name: '🇬🇧 English', level: 'Advanced' },
+  { name: 'French', level: 'Native' },
+  { name: 'English', level: 'Advanced' },
 ];

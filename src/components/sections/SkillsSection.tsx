@@ -16,13 +16,13 @@ const SkillCard = ({ skill, index, isFeatured }: { skill: typeof skills[0]; inde
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: index * 0.05, duration: 0.5 }}
       whileHover={{ scale: 1.08, y: -5 }}
-      className={`rounded-lg border transition-all duration-300 ${
+      className={`rounded-xl border transition-all duration-300 ${
         isFeatured
-          ? 'border-neon-green bg-gradient-to-br from-neon-green/10 to-dark-800 px-6 py-5 hover:shadow-lg hover:shadow-neon-green/30'
+          ? 'border-neon-green bg-gradient-to-br from-neon-green/10 to-dark-800 px-6 py-5 shadow-lg shadow-neon-green/10 hover:shadow-neon-green/30'
           : 'border-dark-700 bg-dark-800 px-4 py-3 hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20'
       }`}
     >
-      <p className={`text-center font-medium ${isFeatured ? 'text-base text-white' : 'text-sm text-gray-300'}`}>
+      <p className={`text-center font-semibold tracking-wide ${isFeatured ? 'text-base text-white' : 'text-sm text-gray-300'}`}>
         {skill.name}
       </p>
     </motion.div>
@@ -39,7 +39,7 @@ export const SkillsSection = () => {
   const isInView = useInView(ref)
 
   // Define featured/main frameworks
-  const featuredFrameworks = ['⚛️ React', '🅰️ Angular', '🟢 Node.js', '🏗️ NestJS', '🐘 Symfony', '🌿 Spring', '🐳 Docker']
+  const featuredFrameworks = ['React', 'Angular', 'Node.js', 'NestJS', 'Symfony', 'Spring', 'Docker']
 
   // Organize skills by category
   const skillsByCategory = {
@@ -50,9 +50,9 @@ export const SkillsSection = () => {
   }
 
   const categories = [
-    { key: 'frontend', label: '⚛️ ' + t('skills.frontend'), icon: '🎨' },
-    { key: 'backend', label: '🔧 ' + t('skills.backend'), icon: '⚙️' },
-    { key: 'tools', label: '🛠️ Tools & DevOps', icon: '🔨' },
+    { key: 'frontend', label: 'Frontend Frameworks' },
+    { key: 'backend', label: 'Backend Frameworks' },
+    { key: 'tools', label: 'Tools & DevOps' },
   ] as const
 
   return (
@@ -69,12 +69,15 @@ export const SkillsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-20"
         >
-          <div className="mb-8 text-center">
-            <h3 className="inline-block rounded-lg bg-neon-green/10 px-4 py-2 text-lg font-bold text-neon-green">
-              ⭐ Main Frameworks & Technologies
-            </h3>
+          <div className="mb-10 text-center">
+            <div className="inline-block">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Main Frameworks & Technologies
+              </h3>
+              <div className="h-1 bg-gradient-to-r from-transparent via-neon-green to-transparent rounded-full"></div>
+            </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {skills
@@ -91,7 +94,7 @@ export const SkillsSection = () => {
         </motion.div>
 
         {/* Categories Section */}
-        <div className="space-y-16">
+        <div className="space-y-18">
           {categories.map(({ key, label }) => (
             <motion.div
               key={key}
@@ -100,11 +103,11 @@ export const SkillsSection = () => {
               transition={{ duration: 0.6 }}
             >
               {/* Category Header */}
-              <div className="mb-8 flex items-center gap-3 border-b-2 border-neon-green border-opacity-30 pb-4">
-                <div className="text-3xl">{label.charAt(0)}</div>
-                <h3 className="text-2xl font-bold text-white">
-                  {label.substring(2)}
+              <div className="mb-8">
+                <h3 className="text-xl font-bold text-white uppercase tracking-wider">
+                  {label}
                 </h3>
+                <div className="mt-2 h-0.5 w-12 bg-neon-green rounded-full"></div>
               </div>
 
               {/* Skills Grid */}
@@ -121,17 +124,17 @@ export const SkillsSection = () => {
             </motion.div>
           ))}
 
-          {/* Other Skills */}
+          {/* Other Skills / Competencies */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
             transition={{ duration: 0.6 }}
           >
-            <div className="mb-8 flex items-center gap-3 border-b-2 border-neon-green border-opacity-30 pb-4">
-              <div className="text-3xl">🎯</div>
-              <h3 className="text-2xl font-bold text-white">
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-white uppercase tracking-wider">
                 Competencies & Methodologies
               </h3>
+              <div className="mt-2 h-0.5 w-12 bg-neon-green rounded-full"></div>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
@@ -144,6 +147,39 @@ export const SkillsSection = () => {
                 />
               ))}
             </div>
+          </motion.div>
+
+          {/* AI & Innovation Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
+            transition={{ duration: 0.6 }}
+            className="mt-20"
+          >
+            <div className="mb-8">
+              <h3 className="text-xl font-bold text-white uppercase tracking-wider">
+                AI & Innovation
+              </h3>
+              <div className="mt-2 h-0.5 w-12 bg-neon-green rounded-full"></div>
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={isInView ? { opacity: 1 } : 'hidden'}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="rounded-xl border-2 border-neon-green border-opacity-40 bg-gradient-to-br from-neon-green/5 to-dark-800 p-8 md:p-10"
+            >
+              <div className="flex items-center justify-center gap-4 mb-4">
+                <div className="w-3 h-3 rounded-full bg-neon-green animate-pulse"></div>
+                <p className="text-lg font-semibold text-neon-green">In Development</p>
+                <div className="w-3 h-3 rounded-full bg-neon-green animate-pulse"></div>
+              </div>
+              <p className="text-center text-gray-300 text-lg leading-relaxed">
+                I'm currently exploring and working with AI technologies and innovations.
+                <br />
+                <span className="text-neon-green font-medium">This section is coming soon...</span>
+              </p>
+            </motion.div>
           </motion.div>
         </div>
       </Container>
