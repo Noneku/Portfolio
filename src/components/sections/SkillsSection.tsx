@@ -31,7 +31,7 @@ const SkillCard = ({ skill, index, isFeatured }: { skill: typeof skills[0]; inde
 
 /**
  * Skills section
- * Display all technical skills organized by category with featured frameworks
+ * Display featured frameworks and AI & Innovation section
  */
 export const SkillsSection = () => {
   const { t } = useTranslation()
@@ -40,20 +40,6 @@ export const SkillsSection = () => {
 
   // Define featured/main frameworks
   const featuredFrameworks = ['React', 'Angular', 'Node.js', 'NestJS', 'Symfony', 'Spring', 'Docker']
-
-  // Organize skills by category
-  const skillsByCategory = {
-    frontend: skills.filter((s) => s.category === 'frontend'),
-    backend: skills.filter((s) => s.category === 'backend'),
-    tools: skills.filter((s) => s.category === 'tools'),
-    other: skills.filter((s) => s.category === 'other'),
-  }
-
-  const categories = [
-    { key: 'frontend', label: 'Frontend Frameworks' },
-    { key: 'backend', label: 'Backend Frameworks' },
-    { key: 'tools', label: 'Tools & DevOps' },
-  ] as const
 
   return (
     <Section
@@ -95,60 +81,6 @@ export const SkillsSection = () => {
 
         {/* Categories Section */}
         <div className="space-y-18">
-          {categories.map(({ key, label }) => (
-            <motion.div
-              key={key}
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
-              transition={{ duration: 0.6 }}
-            >
-              {/* Category Header */}
-              <div className="mb-8">
-                <h3 className="text-xl font-bold text-white uppercase tracking-wider">
-                  {label}
-                </h3>
-                <div className="mt-2 h-0.5 w-12 bg-neon-green rounded-full"></div>
-              </div>
-
-              {/* Skills Grid */}
-              <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
-                {skillsByCategory[key].map((skill, index) => (
-                  <SkillCard
-                    key={skill.name}
-                    skill={skill}
-                    index={index}
-                    isFeatured={false}
-                  />
-                ))}
-              </div>
-            </motion.div>
-          ))}
-
-          {/* Other Skills / Competencies */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={isInView ? { opacity: 1, y: 0 } : 'hidden'}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="mb-8">
-              <h3 className="text-xl font-bold text-white uppercase tracking-wider">
-                Competencies & Methodologies
-              </h3>
-              <div className="mt-2 h-0.5 w-12 bg-neon-green rounded-full"></div>
-            </div>
-
-            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-4">
-              {skillsByCategory.other.map((skill, index) => (
-                <SkillCard
-                  key={skill.name}
-                  skill={skill}
-                  index={index}
-                  isFeatured={false}
-                />
-              ))}
-            </div>
-          </motion.div>
-
           {/* AI & Innovation Section */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
