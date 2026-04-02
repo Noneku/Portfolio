@@ -78,7 +78,7 @@ export const AboutSection = () => {
                   transition={{ delay: index * 0.1, duration: 0.5 }}
                   className="rounded-xl border border-neon-green border-opacity-30 bg-dark-900 px-4 py-3 text-center hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20 transition-all"
                 >
-                  <p className="text-gray-200 font-medium">{skill.emoji} {skill.name}</p>
+                  <p className="text-gray-200 font-medium">{skill.name}</p>
                 </motion.div>
               ))}
             </div>
@@ -98,7 +98,9 @@ export const AboutSection = () => {
                   transition={{ delay: index * 0.2, duration: 0.6 }}
                   className="rounded-xl border border-neon-green border-opacity-30 bg-dark-900 px-6 py-4 text-center hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20 transition-all"
                 >
-                  <p className="text-lg font-semibold text-white">{lang.name}</p>
+                  <p className="text-lg font-semibold text-white">
+                    {lang.name}
+                  </p>
                   <p className="mt-1 text-sm text-neon-green">{lang.level}</p>
                 </motion.div>
               ))}

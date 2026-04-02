@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useScrollPosition } from '../../hooks'
-import { changeLanguage } from '../../i18n/config'
-import { navLinks } from '../../data/constants'
-import { Container } from '../ui'
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useScrollPosition } from '../../hooks';
+import { changeLanguage } from '../../i18n/config';
+import { navLinks } from '../../data/constants';
+import { Container } from '../ui';
 
 /**
  * Navbar component
@@ -12,23 +12,23 @@ import { Container } from '../ui'
  * Appears when user scrolls down, has mobile menu burger
  */
 export const Navbar = () => {
-  const { i18n } = useTranslation()
-  const isScrolled = useScrollPosition()
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { i18n } = useTranslation();
+  const isScrolled = useScrollPosition();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Handle smooth scrolling to sections
   const handleNavClick = (href: string) => {
-    const element = document.querySelector(href)
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setIsMobileMenuOpen(false)
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
     }
-  }
+  };
 
   // Handle language change
   const handleLanguageChange = (lang: 'en' | 'fr') => {
-    changeLanguage(lang)
-  }
+    changeLanguage(lang);
+  };
 
   return (
     <nav
@@ -138,5 +138,5 @@ export const Navbar = () => {
         </AnimatePresence>
       </Container>
     </nav>
-  )
-}
+  );
+};

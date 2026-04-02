@@ -83,12 +83,12 @@ export const skills: Skill[] = [
  * Soft skills and professional qualities
  */
 export const softSkills: SoftSkill[] = [
-  { name: 'Team Spirit', emoji: '👥' },
-  { name: 'Adaptability', emoji: '🔄' },
-  { name: 'Problem Solving', emoji: '🧩' },
-  { name: 'Autonomy', emoji: '⚡' },
-  { name: 'Communication', emoji: '💬' },
-  { name: 'Attention to Detail', emoji: '🎯' },
+  { name: 'Team Spirit' },
+  { name: 'Adaptability' },
+  { name: 'Problem Solving' },
+  { name: 'Autonomy' },
+  { name: 'Communication' },
+  { name: 'Attention to Detail' },
 ];
 
 /**
@@ -96,5 +96,5 @@ export const softSkills: SoftSkill[] = [
  */
 export const languages: Language[] = [
   { name: 'French', level: 'Native' },
-  { name: 'English', level: 'Advanced' },
+  { name: 'English', level: 'Intermediate' },
 ];

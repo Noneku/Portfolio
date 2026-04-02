@@ -1,15 +1,23 @@
-import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
-import { Container, Section } from '../ui'
-import { skills } from '../../data/constants'
-import { useInView } from '../../hooks'
-import { useRef } from 'react'
+import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
+import { Container, Section } from '../ui';
+import { skills } from '../../data/constants';
+import { useInView } from '../../hooks';
+import { useRef } from 'react';
 
 /**
  * SkillCard internal component
  * Individual skill display card with improved styling
  */
-const SkillCard = ({ skill, index, isFeatured }: { skill: typeof skills[0]; index: number; isFeatured?: boolean }) => {
+const SkillCard = ({
+  skill,
+  index,
+  isFeatured,
+}: {
+  skill: (typeof skills)[0];
+  index: number;
+  isFeatured?: boolean;
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8 }}
@@ -22,24 +30,34 @@ const SkillCard = ({ skill, index, isFeatured }: { skill: typeof skills[0]; inde
           : 'border-dark-700 bg-dark-800 px-4 py-3 hover:border-neon-green hover:shadow-lg hover:shadow-neon-green/20'
       }`}
     >
-      <p className={`text-center font-semibold tracking-wide ${isFeatured ? 'text-base text-white' : 'text-sm text-gray-300'}`}>
+      <p
+        className={`text-center font-semibold tracking-wide ${isFeatured ? 'text-base text-white' : 'text-sm text-gray-300'}`}
+      >
         {skill.name}
       </p>
     </motion.div>
-  )
-}
+  );
+};
 
 /**
  * Skills section
  * Display featured frameworks and AI & Innovation section
  */
 export const SkillsSection = () => {
-  const { t } = useTranslation()
-  const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref)
+  const { t } = useTranslation();
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
 
   // Define featured/main frameworks
-  const featuredFrameworks = ['React', 'Angular', 'Node.js', 'NestJS', 'Symfony', 'Spring', 'Docker']
+  const featuredFrameworks = [
+    'React',
+    'Angular',
+    'Node.js',
+    'NestJS',
+    'Symfony',
+    'Spring',
+    'Docker',
+  ];
 
   return (
     <Section
@@ -103,18 +121,23 @@ export const SkillsSection = () => {
             >
               <div className="flex items-center justify-center gap-4 mb-4">
                 <div className="w-3 h-3 rounded-full bg-neon-green animate-pulse"></div>
-                <p className="text-lg font-semibold text-neon-green">In Development</p>
+                <p className="text-lg font-semibold text-neon-green">
+                  In Development
+                </p>
                 <div className="w-3 h-3 rounded-full bg-neon-green animate-pulse"></div>
               </div>
               <p className="text-center text-gray-300 text-lg leading-relaxed">
-                I'm currently exploring and working with AI technologies and innovations.
+                I'm currently exploring and working with AI technologies and
+                innovations.
                 <br />
-                <span className="text-neon-green font-medium">This section is coming soon...</span>
+                <span className="text-neon-green font-medium">
+                  This section is coming soon...
+                </span>
               </p>
             </motion.div>
           </motion.div>
         </div>
       </Container>
     </Section>
-  )
-}
+  );
+};
