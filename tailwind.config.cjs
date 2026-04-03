@@ -12,6 +12,17 @@ module.exports = {
           green: '#10b981',
           'green-dark': '#059669',
         },
+        gold: {
+          50: '#faf8f3',
+          100: '#f5f3f0',
+          200: '#e8e4dd',
+          300: '#d9d2c9',
+          400: '#c9a766',
+          500: '#b8945a',
+          600: '#a67e46',
+          700: '#8a6838',
+          800: '#6d5529',
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',
@@ -34,4 +45,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "projects": "Projects",
+    "experience": "Experience",
     "about": "About",
     "skills": "Skills",
     "contact": "Contact"
@@ -21,6 +22,11 @@
     "demo": "Live Demo",
     "technologies": "Technologies"
   },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My career journey and accomplishments",
+    "responsibilities": "Key Responsibilities"
+  },
   "about": {
     "title": "About Me",
     "description": "I'm a curious and rigorous full-stack developer passionate about web and innovative technologies. Currently pursuing a Master's degree in Advanced Software Engineering at ISCOD, I'm seeking a 2-year internship to apply my skills and contribute to innovative projects. With experience in both frontend and backend development, I build scalable and maintainable applications.",
@@ -34,13 +40,19 @@
     "tools": "Tools & DevOps"
   },
   "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Let's work together",
+    "title": "Contact Us",
+    "subtitle": "A grand vision without formidable people is of no importance. Let's work together.",
     "email": "dev.nassim.pro@gmail.com",
-    "phone": "06 22 75 28 18",
     "location": "Roubaix, France",
+    "address": "1524 Charlotte Street, Peterborough ON K9H 2R3",
     "github": "GitHub",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": "Enter your Name",
+      "email": "Enter a valid email address",
+      "message": "Enter your message",
+      "submit": "Submit"
+    }
   },
   "footer": {
     "credits": "Built with React, TypeScript, and TailwindCSS"

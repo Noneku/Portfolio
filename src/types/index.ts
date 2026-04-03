@@ -60,6 +60,23 @@ export interface Language {
 }
 
 /**
+ * Professional experience
+ */
+export interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  location?: string;
+  period: string;
+  startDate: string;
+  endDate: string;
+  description: string;
+  responsibilities: string[];
+  technologies?: string[];
+  type: 'internship' | 'job' | 'contract';
+}
+
+/**
  * Component props type for sections
  */
 export interface SectionProps {

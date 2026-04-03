@@ -3,6 +3,7 @@ import { Navbar, Footer } from './components/layout'
 import {
   HeroSection,
   ProjectsSection,
+  ExperienceSection,
   AboutSection,
   SkillsSection,
   ContactSection,
@@ -28,6 +29,7 @@ function App() {
       <main>
         <HeroSection />
         <ProjectsSection />
+        <ExperienceSection />
         <AboutSection />
         <SkillsSection />
         <ContactSection />

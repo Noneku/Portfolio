@@ -1,4 +1,4 @@
-import { NavLink, SocialLink, Skill, SoftSkill, Language } from '../types';
+import { NavLink, SocialLink, Skill, SoftSkill, Language, Experience } from '../types';
 
 /**
  * Navigation links for the portfolio
@@ -7,6 +7,7 @@ import { NavLink, SocialLink, Skill, SoftSkill, Language } from '../types';
 export const navLinks: NavLink[] = [
   { id: 'hero', label: 'nav.home', href: '#hero' },
   { id: 'projects', label: 'nav.projects', href: '#projects' },
+  { id: 'experience', label: 'nav.experience', href: '#experience' },
   { id: 'about', label: 'nav.about', href: '#about' },
   { id: 'skills', label: 'nav.skills', href: '#skills' },
   { id: 'contact', label: 'nav.contact', href: '#contact' },
@@ -97,4 +98,52 @@ export const softSkills: SoftSkill[] = [
 export const languages: Language[] = [
   { name: 'French', level: 'Native' },
   { name: 'English', level: 'Intermediate' },
+];
+
+/**
+ * Professional experiences
+ */
+export const experiences: Experience[] = [
+  {
+    id: 'hdm-network',
+    title: 'Full-Stack Developer Intern',
+    company: 'HDM Network',
+    location: 'Belgium',
+    period: 'Sep - Dec 2024',
+    startDate: '2024-09-01',
+    endDate: '2024-12-31',
+    description:
+      'Contributed to multiple full-stack projects including database design, API development, web scraping, and both front-end and back-end application development in a dynamic and fast-paced environment.',
+    responsibilities: [
+      'Designed and implemented scalable PostgreSQL databases',
+      'Developed RESTful and GraphQL APIs using NestJS',
+      'Built responsive web applications with React and React Native',
+      'Implemented web scraping solutions for data collection and analysis',
+      'Containerized applications using Docker for consistent deployments',
+      'Collaborated with team using Agile methodologies and Git version control',
+    ],
+    technologies: ['React', 'React Native', 'NestJS', 'GraphQL', 'Prisma', 'Docker', 'PostgreSQL'],
+    type: 'internship',
+  },
+  {
+    id: 'mairie-roubaix',
+    title: 'Full-Stack Developer Intern',
+    company: 'Mairie de Roubaix',
+    location: 'France',
+    period: 'Oct - Nov 2023',
+    startDate: '2023-10-01',
+    endDate: '2023-11-30',
+    description:
+      'Developed a comprehensive web application for managing and administering activity reports submitted by city employees. Focused on backend development with attention to data integrity and user experience.',
+    responsibilities: [
+      'Built activity report management system using Symfony framework',
+      'Designed and optimized database schema with Doctrine ORM',
+      'Created responsive forms with Twig templating engine',
+      'Implemented user authentication and authorization',
+      'Integrated Bootstrap for consistent UI/UX design',
+      'Tested application using XAMPP local development environment',
+    ],
+    technologies: ['Symfony', 'Twig', 'Doctrine', 'Bootstrap', 'MySQL', 'XAMPP'],
+    type: 'internship',
+  },
 ];

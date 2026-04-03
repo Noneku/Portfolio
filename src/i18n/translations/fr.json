@@ -2,6 +2,7 @@
   "nav": {
     "home": "Accueil",
     "projects": "Projets",
+    "experience": "Expérience",
     "about": "À propos",
     "skills": "Compétences",
     "contact": "Contact"
@@ -21,6 +22,11 @@
     "demo": "Démo en direct",
     "technologies": "Technologies"
   },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours et mes réalisations",
+    "responsibilities": "Responsabilités principales"
+  },
   "about": {
     "title": "À Propos",
     "description": "Je suis un développeur full-stack curieux et rigoureux passionné par le web et les technologies innovantes. Actuellement en Master Ingénierie Avancée du Logiciel à l'ISCOD, je cherche une alternance de 2 ans pour mettre en pratique mes compétences et contribuer à des projets innovants. Avec une expérience en développement frontend et backend, je crée des applications évolutives et maintenables.",
@@ -34,13 +40,19 @@
     "tools": "Outils & DevOps"
   },
   "contact": {
-    "title": "Restons en Contact",
-    "subtitle": "Travaillons ensemble",
+    "title": "Nous contacter",
+    "subtitle": "Une grande vision sans des gens formidables n'a pas d'importance. Travaillons ensemble.",
     "email": "dev.nassim.pro@gmail.com",
-    "phone": "06 22 75 28 18",
     "location": "Roubaix, France",
+    "address": "1524 Charlotte Street, Peterborough ON K9H 2R3",
     "github": "GitHub",
-    "linkedin": "LinkedIn"
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": "Entrez votre nom",
+      "email": "Entrez une adresse email valide",
+      "message": "Entrez votre message",
+      "submit": "Soumettre"
+    }
   },
   "footer": {
     "credits": "Construit avec React, TypeScript et TailwindCSS"
