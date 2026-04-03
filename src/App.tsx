@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { Navbar, Footer } from './components/layout'
+import { useEffect } from 'react';
+import { Navbar, Footer } from './components/layout';
 import {
   HeroSection,
   ProjectsSection,
@@ -7,8 +7,8 @@ import {
   AboutSection,
   SkillsSection,
   ContactSection,
-} from './components/sections'
-import './i18n/config'
+} from './components/sections';
+import './i18n/config';
 
 /**
  * Main App component
@@ -18,8 +18,8 @@ import './i18n/config'
 function App() {
   useEffect(() => {
     // Smooth scroll behavior for the entire page
-    document.documentElement.style.scrollBehavior = 'smooth'
-  }, [])
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }, []);
 
   return (
     <div className="min-h-screen bg-dark-900 text-white">
@@ -37,7 +37,7 @@ function App() {
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

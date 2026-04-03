@@ -69,21 +69,27 @@ export const ExperienceSection = () => {
                 <motion.div
                   key={exp.id}
                   variants={itemVariants}
-                  className={`relative grid gap-6 lg:grid-cols-2 ${
-                    index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'
-                  }`}
+                  className={`relative grid gap-6 lg:grid-cols-2 `}
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-0 top-6 -ml-3 hidden h-6 w-6 rounded-full border-4 border-dark-800 bg-neon-green lg:block md:left-1/2" />
 
                   {/* Content container */}
-                  <div className={index % 2 === 0 ? 'lg:pr-12' : 'lg:pl-12 lg:col-start-2'}>
+                  <div
+                    className={
+                      index % 2 === 0 ? 'lg:pl-12' : 'lg:pr-12 lg:col-start-2'
+                    }
+                  >
                     {/* Header */}
                     <div className="mb-4">
                       <div className="mb-2 flex items-start gap-3 lg:justify-end">
                         <div>
-                          <h3 className="text-xl font-bold text-white">{exp.title}</h3>
-                          <p className="text-neon-green font-semibold">{exp.company}</p>
+                          <h3 className="text-xl font-bold text-white">
+                            {exp.title}
+                          </h3>
+                          <p className="text-neon-green font-semibold">
+                            {exp.company}
+                          </p>
                         </div>
                         {exp.location && (
                           <span className="mt-1 whitespace-nowrap text-xs text-gray-400">
@@ -91,11 +97,15 @@ export const ExperienceSection = () => {
                           </span>
                         )}
                       </div>
-                      <p className="text-sm text-gray-400 font-medium">{exp.period}</p>
+                      <p className="text-sm text-gray-400 font-medium">
+                        {exp.period}
+                      </p>
                     </div>
 
                     {/* Description */}
-                    <p className="mb-4 text-gray-300 leading-relaxed">{exp.description}</p>
+                    <p className="mb-4 text-gray-300 leading-relaxed">
+                      {exp.description}
+                    </p>
 
                     {/* Responsibilities */}
                     <div className="mb-6">

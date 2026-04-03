@@ -1,4 +1,11 @@
-import { NavLink, SocialLink, Skill, SoftSkill, Language, Experience } from '../types';
+import {
+  NavLink,
+  SocialLink,
+  Skill,
+  SoftSkill,
+  Language,
+  Experience,
+} from '../types';
 
 /**
  * Navigation links for the portfolio
@@ -122,7 +129,15 @@ export const experiences: Experience[] = [
       'Containerized applications using Docker for consistent deployments',
       'Collaborated with team using Agile methodologies and Git version control',
     ],
-    technologies: ['React', 'React Native', 'NestJS', 'GraphQL', 'Prisma', 'Docker', 'PostgreSQL'],
+    technologies: [
+      'React',
+      'React Native',
+      'NestJS',
+      'GraphQL',
+      'Prisma',
+      'Docker',
+      'PostgreSQL',
+    ],
     type: 'internship',
   },
   {
@@ -143,7 +158,14 @@ export const experiences: Experience[] = [
       'Integrated Bootstrap for consistent UI/UX design',
       'Tested application using XAMPP local development environment',
     ],
-    technologies: ['Symfony', 'Twig', 'Doctrine', 'Bootstrap', 'MySQL', 'XAMPP'],
+    technologies: [
+      'Symfony',
+      'Twig',
+      'Doctrine',
+      'Bootstrap',
+      'MySQL',
+      'XAMPP',
+    ],
     type: 'internship',
   },
 ];
